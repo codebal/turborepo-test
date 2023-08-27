@@ -27,5 +27,5 @@ jobs:
             turbo-${{ github.job }}-${{ github.ref_name }}-
       - name: Install packages
         run: yarn --frozen-lockfile
-      - name: All tests
-        run: yarn test-coverage --cache-dir=".turbo"
+      - name: Build
+        run: yarn build --cache-dir=".turbo"
